@@ -4,8 +4,8 @@ import theme from 'theme';
 
 import SEO from 'components/seo';
 import Layout from 'components/layout';
-import Banner from '../sections/banner';
-import KeyFeature from '../sections/key-feature';
+import Banner from '../sections/banner/banner';
+import KeyFeature from '../sections/services/key-feature';
 import ServiceSection from '../sections/service-section';
 import Feature from '../sections/feature';
 import CoreFeature from '../sections/core-feature';
@@ -18,13 +18,10 @@ export default function IndexPage() {
   return (
     <ThemeProvider theme={theme}>
         <Layout>
-          <SEO title="NextJS Landing Page" />
+          <SEO title="Study Solutions" />
           <Banner />
           <KeyFeature />
           <ServiceSection />
-          <Feature />
-          <CoreFeature />
-          <WorkFlow />
           <Package />
           <TeamSection />
           <TestimonialCard />

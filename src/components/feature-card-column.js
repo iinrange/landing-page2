@@ -36,16 +36,18 @@ const styles = {
   wrapper: {
     width: '100%',
     display: 'flex',
+    justifyContent:'center',
     flexDirection: 'column',
     title: {
-      fontSize: 3,
+      fontSize: 6,
       color: 'heading_secondary',
       lineHeight: 1.4,
-      fontWeight: 700,
+      fontWeight: 900,
+      marginTop:'30px',
       mb: [2, null, 3],
     },
     subTitle: {
-      fontSize: 1,
+      fontSize: 5,
       fontWeight: 400,
       lineHeight: '1.9',
     },

@@ -3,14 +3,19 @@ export default {
   colors: {
     text: '#343D48', // body color and primary color
     text_secondary: '#02073E', // secondary body color
+    text_white: '#FFFFFF', // secondary body color
+    text_brown: '#9c6644', // secondary body color
+    text_bage: '#ede0d4', // secondary body color
     heading: '#0F2137', // primary heading color
     heading_secondary: '#0F2137', // heading color
     background: '#FFFFFF', // body background color
-    background_secondary: '#F9FBFD', // secondary background color
+    background_secondary: '#ede0d4', // secondary background color
     border_color: '#E5ECF4', // border color
     yellow: '#FFA740', // border color
     primary: '#EA3A60', // primary button and link color
     secondary: '#2563FF', // secondary color - can be used for hover states
+    color_brown: '#9c6644', // secondary body color
+    color_darkb: '#7f5539', // secondary body color
     muted: '#E4E4E4', // muted color
     accent: '#609', // a contrast color for emphasizing UI
 
@@ -63,10 +68,11 @@ export default {
         null,
         '780px',
         '1020px',
-        '1200px',
+        '1300px',
         null,
-        '1310px',
+        '1500px',
       ],
+      
       px: [4, 6],
     },
     header: {
@@ -99,16 +105,21 @@ export default {
       overflow: 'hidden',
     },
     testimonial: {
-      pt: [8, null, 8, '70px', null, 8, null, '145px'],
+      pt: [8, null, 8, '70px', null, 8, null, '40px'],
       pb: ['90px', null, 9, null, null, 10, null, '190px'],
       overflow: 'hidden',
     },
     services: {
-      pb: ['90px', null, 9, null, null, 10, null, '150px'],
+      pb: ['90px', null, 9, null, null, 10, null, '50px'],
     },
     pricing: {
-      pt: [8, null, 9, null, null, 10, null, '180px'],
+      pt: [8, null, 9, null, null, 10, null, '50px'],
+      pb: ['90px', null, 9, null, null, 10, null, '125px'],
+    },
+    about: {
+      pt: [8, null, 9, null, null, 10, null, '100px'],
       pb: ['90px', null, 9, null, null, 10, null, '180px'],
+
     },
   },
   sectionHeader: {
@@ -117,7 +128,7 @@ export default {
     flexDirection: 'column',
     alignItems: 'center',
     mt: ['-3px', null, -1],
-    marginBottom: ['50px', null, '60px', null, null, '65px', null, '80px'],
+    marginBottom: ['50px', null, '60px', null, null, '65px', null, '40px'],
     mx: 'auto',
     title: {
       fontSize: ['24px', null, '28px', null, null, '32px', null, '36px'],
@@ -141,7 +152,7 @@ export default {
   },
   text: {
     heading: {
-      fontFamily: 'heading',
+      fontFamily: 'Viaoda Libre',
       lineHeight: 'heading',
       fontWeight: 'heading',
       fontSize: [4],
@@ -160,6 +171,7 @@ export default {
         '58px',
         '66px',
       ],
+      fontFamily:'Viaoda Libre',
       lineHeight: [1.3, null, null, null, null, 1.2],
       fontWeight: 700,
       mb: [4, null, null, null, null, 5],
@@ -249,7 +261,7 @@ export default {
       fontSize: ['14px', null, null, 2],
       letterSpacings: '-0.15px',
       padding: ['12px 20px', null, '15px 30px'],
-      fontFamily: 'body',
+      fontFamily:'Viaoda Libre',
       cursor: 'pointer',
       lineHeight: 1.2,
       transition: 'all 0.25s',
@@ -261,7 +273,7 @@ export default {
     primary: {
       variant: 'buttons.defaultBtn',
       color: 'white',
-      bg: 'primary',
+      bg: 'color_darkb',
       '&:hover': {
         boxShadow: 'rgba(233, 76, 84, 0.57) 0px 9px 20px -5px',
       },

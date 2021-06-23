@@ -32,36 +32,35 @@ const styles = {
     display: 'flex',
     alignItems: 'center',
     flexDirection: 'column',
-    py: [0, null, 4, 5, 6],
+    py: [0, null, 4, 5, 3],
     px: [2, null, 6, 7],
     transition: 'ease-in-out 0.4s',
     borderRadius: '8px',
     position: 'relative',
     '&:hover': {
-      boxShadow: ['none', null, '0 4px 10px rgba(39, 83, 123, 0.12)'],
+      boxShadow: ['none', null, '0 16px 40px rgba(39, 83, 123, 0.12)'],
       '.info__name': {
-        color: 'primary',
+        color: 'color_darkb',
       },
       '.info__designation': {
-        color: 'primary',
+        color: 'color_darkb',
       },
       '.social__share': {
+        color:'color_darkb',
         opacity: 1,
         a: {
           my: 0,
           py: [0, null, 1],
+          
         },
       },
     },
   },
 
   memberThumb: {
-    width: ['70px', '80px', '100px', null, null, '130px'],
-    height: ['70px', '80px', '100px', null, null, '130px'],
+    width: ['70px', '80px', '100px', null, null, '300px'],
+    height: ['70px', '80px', '100px', null, null, '500px'],
     flexShrink: 0,
-    border: '2px solid',
-    borderColor: 'primary',
-    borderRadius: '50%',
   },
   infoWrapper: {
     width: '100%',

@@ -8,9 +8,10 @@ export default function PriceCard({
     name,
     description,
     priceWithUnit,
-    buttonText = 'Start Free Trial',
+    buttonText = 'Book a Free Session',
     anotherOption,
     points,
+    state,
   },
 }) {
   return (
@@ -30,22 +31,13 @@ export default function PriceCard({
           />
           <Text className='package__price' sx={styles.price}>
             {priceWithUnit}
-            <span> /Monthly </span>
+            <span> /Monthly </span> 
           </Text>
           <Box sx={styles.buttonGroup}>
             <Button variant='primary' aria-label={buttonText}>
               {buttonText} 
             </Button>
-            {anotherOption && (
-              <Button 
-                variant='textButton'
-                className='free_trial'
-                aria-label={anotherOption}
-                sx={{color:'black'}}
-              >
-                {anotherOption}
-              </Button>
-            )}
+            
           </Box>
       </Box>
     </Card>

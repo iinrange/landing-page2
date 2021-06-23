@@ -32,7 +32,7 @@ const responsive = {
 };
 
 export default function Package() {
-  const { monthly, annual } = packages;
+  const { monthly, session } = packages;
 
   const [state, setState] = useState({
     active: 'monthly',
@@ -40,8 +40,8 @@ export default function Package() {
   })
 
   const handlePricingPlan = (plan) => {
-    (plan === 'annual' ? 
-    (setState({ active: 'annual', pricingPlan: annual}))
+    (plan === 'session' ? 
+    (setState({ active: 'session', pricingPlan: session}))
     :
     ( setState({ active: 'monthly', pricingPlan: monthly}))
     )
@@ -73,7 +73,7 @@ export default function Package() {
   };
 
   return (
-    <section id='pricing' sx={{variant: 'section.pricing'}}>
+    <section id='book' sx={{variant: 'section.pricing'}}>
       <Container>
         <SectionHeader
         slogan='pricing plan'
@@ -89,12 +89,12 @@ export default function Package() {
               Monthly Plan
             </button>
             <button 
-            className={state.active === 'annual' ? 'active' : ''} 
+            className={state.active === 'session' ? 'active' : ''} 
             type='button' 
-            aria-label='Annual'
-            onClick={() => handlePricingPlan('annual')}
+            aria-label='Session'
+            onClick={() => handlePricingPlan('session')}
             >
-              Annual Plan
+              Single Session
             </button>
           </Box>
         </Flex>
@@ -182,6 +182,7 @@ const styles = {
     display: 'flex',
     padding: '7px',
     margin: '0 auto',
+    marginBottom:'20px',
     borderRadius: '5px',
     backgroundColor: '#F7F8FB',
     button: {

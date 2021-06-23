@@ -6,31 +6,39 @@ import TextFeature from 'components/text-feature';
 import ModalVideo from 'react-modal-video';
 import { IoIosPlay } from 'react-icons/io';
 
-import ServiceThumb from 'assets/service-thumb.png';
+import ServiceThumb from 'assets/video1.jpg';
 import shapePattern from 'assets/shape-pattern1.png';
 
 import Smart from 'assets/services/smart.svg';
 import Secure from 'assets/services/secure.svg';
+import {GiQuickSlash} from 'react-icons/gi'
 
 const data = {
-  subTitle: 'our services',
-  title: 'Business Goals Achieved with Design',
+  subTitle: 'Know the Process',
+  title: 'Learn Everything You Need to be Ready',
   features: [
     {
       id: 1,
-      imgSrc: Smart,
-      altText: 'Smart Features',
-      title: 'Smart Features',
+      altText: 'Quick and Painless',
+      title: 'Quick and Painless',
       text:
-        'Get your blood tests delivered at let home collect sample from the victory of the managements. your blood tests.',
+        'Simple and easy process for a more permanent look',
     },
     {
       id: 2,
       imgSrc: Secure,
-      altText: 'Secure Contents',
-      title: 'Secure Contents',
+      altText: 'Complete Makeover',
+      title: 'Complete Makeover',
       text:
-        'Get your blood tests delivered at let home collect sample from the victory of the managements. your blood tests.',
+        'Get a complete and fashinable look for your special ocassion',
+    },
+    {
+      id: 3,
+      imgSrc: Secure,
+      altText: 'Information Savant',
+      title: 'Information Savant',
+      text:
+        'Get any question you have answere in the FAQ',
     },
   ],
 };
@@ -61,16 +69,14 @@ export default function ServiceSection() {
               <IoIosPlay />
             </span>
           </Button>
-          <Box sx ={styles.shapeBox} >
-            <Image src={shapePattern} alt='Shape' />
-          </Box>
+          
         </Box>
         <Box sx={styles.contentBox}>
           <TextFeature subTitle={data.subTitle} title={data.title} />
           <Grid sx={styles.grid}>
             {data.features.map((feature) => (
               <Box sx={styles.card} key={feature.id}>
-                <Image src={feature.imgSrc} alt={feature.altText} sx={styles.icon} />
+                <GiQuickSlash alt={feature.altText} sx={styles.icon} />
                 <Box sx={styles.wrapper}>
                   <Heading sx={styles.wrapper.title}> {feature.title} </Heading>
                   <Text sx={styles.wrapper.subTitle}> {feature.text} </Text>
@@ -84,7 +90,7 @@ export default function ServiceSection() {
       <ModalVideo
         channel = "youtube"
         isOpen={isVideoOpen}
-        videoId='iGBERMGMIvc'
+        videoId='wIcTal8_OL0'
         onClose={() => setVideoOpen(false)}
 
       />
@@ -154,9 +160,9 @@ const styles = {
       display: 'block',
       width: ['60px', null, '80px', null, '100px'],
       height: ['60px', null, '80px', null, '100px'],
-      backgroundColor: 'primary',
+      backgroundColor: 'color_darkb',
       borderRadius: '50%',
-      animation: `${playPluse} 1.5s ease-out infinite`,
+      animation: `${playPluse} 2s ease-out infinite`,
       opacity: 0.5,
     },
     '> span': {
@@ -211,7 +217,7 @@ const styles = {
     textAlign: 'left',
     mt: '-5px',
     title: {
-      fontSize: 3,
+      fontSize: 7,
       color: 'heading_secondary',
       lineHeight: 1.4,
       fontWeight: 700,
@@ -219,7 +225,7 @@ const styles = {
     },
 
     subTitle: {
-      fontSize: [1, null, null, '14px', 1],
+      fontSize: [1, null, null, '14px', 5],
       fontWeight: 400,
       lineHeight: 1.9,
     },

@@ -49,7 +49,7 @@ const styles = {
     mt: -1,
     subTitle: {
       fontSize: [0, null, 1],
-      color: 'primary',
+      color: 'color_darkb',
       textTransform: 'uppercase',
       fontWeight: '700',
       mb: [2, 3],
